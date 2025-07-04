@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     // Open Google Drive resume link in new tab
-    window.open('https://drive.google.com/file/d/1CPwqUi6nvgBgD5cj-AbDtfevJy791d4l/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1RWlh9PIEha2YedCyFZ3qFQsjP5w3pqkb/view?usp=sharing', '_blank');
   };
 
   return (
