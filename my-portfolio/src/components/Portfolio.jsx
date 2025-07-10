@@ -110,8 +110,9 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
                   <Card.Text className="text-muted">
+                     <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
                     <FaPython className="me-2 text-warning" /> Django, DRF<br />
-                    <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
+                   
                     JWT, 2FA (Speakeasy), Bcrypt
                   </Card.Text>
                 </Card.Body>
