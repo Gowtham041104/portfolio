@@ -24,7 +24,8 @@ const Portfolio = () => {
     <div
       style={{
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        backgroundColor: "#f9f9f9",
+        background: "linear-gradient(to right, #e0eafc, #cfdef3)",
+        minHeight: "100vh",
       }}
     >
       {/* Navbar */}
@@ -52,21 +53,21 @@ const Portfolio = () => {
         style={{
           marginTop: "72px",
           minHeight: "100vh",
-          background: "linear-gradient(135deg, #ffffff, #f0f4f8)",
+          background: "linear-gradient(145deg, #ffffff, #f1f5f9)",
         }}
         id="home"
       >
         <Container>
-          <h1 className="display-4 fw-bold text-dark">Hi, I'm Gowtham 👋</h1>
-          <p className="lead text-muted">Full Stack Developer | MERN & Django</p>
-          <p className="text-muted">
+          <h1 className="display-4 fw-bold text-dark mb-3">Hi, I'm Gowtham 👋</h1>
+          <p className="lead text-muted fs-4">Full Stack Developer | MERN & Django</p>
+          <p className="text-muted fs-6 mb-4">
             📍 Chennai, Tamil Nadu | 📞 +91-6382444267 | 📧 gowthamk0411@gmail.com
           </p>
           <Button
             size="lg"
-            className="mt-3 px-5 py-2 shadow"
+            className="px-5 py-2 rounded-pill shadow"
             style={{
-              background: "linear-gradient(to right, #141e30, #243b55)",
+              background: "linear-gradient(to right, #4b6cb7, #182848)",
               color: "#fff",
               border: "none",
             }}
@@ -81,48 +82,47 @@ const Portfolio = () => {
       <section id="about" className="py-5 bg-white">
         <Container>
           <h2 className="text-center mb-4 text-dark fw-bold fs-2">Professional Summary</h2>
-          <p className="text-center fs-5 text-muted">
-            A passionate and results-driven engineering graduate with strong foundations in full-stack development. Experienced with the MERN stack and Django-React ecosystems. Adept at building scalable web applications, collaborating with teams, and continuously exploring emerging technologies.
+          <p className="text-center fs-5 text-muted px-3">
+            Passionate Full Stack Developer with hands-on experience building full-fledged applications using the MERN and Django stacks. Strong in clean architecture, secure coding, and solving real-world problems through technology.
           </p>
         </Container>
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-5 bg-light">
+      <section id="skills" className="py-5" style={{ background: "#f8f9fc" }}>
         <Container>
           <h2 className="text-center mb-4 text-dark fw-bold fs-2">Technical Skills</h2>
           <Row className="text-center">
             <Col md={4} className="mb-3">
-              <Card className="h-100 border-0 shadow-sm rounded-4">
+              <Card className="h-100 border-0 shadow-lg rounded-4">
                 <Card.Body>
-                  <Card.Title className="text-dark fw-semibold fs-5">Languages & Frontend</Card.Title>
+                  <Card.Title className="text-dark fw-semibold fs-5">Frontend & Languages</Card.Title>
                   <Card.Text className="text-muted">
                     <FaReact className="me-2 text-primary" /> React.js, Redux<br />
-                    <FaPython className="me-2 text-warning" /> JavaScript (ES6+), Python, SQL<br />
+                    <FaPython className="me-2 text-warning" /> JavaScript, Python, SQL<br />
                     Bootstrap, Axios, Router
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={4} className="mb-3">
-              <Card className="h-100 border-0 shadow-sm rounded-4">
-<Card.Body>
-  <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
-  <Card.Text className="text-muted">
-     <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
-    <FaPython className="me-2 text-warning" /> Django, Django REST Framework<br />
-   
-    JWT, 2FA (Speakeasy), Bcrypt
-  </Card.Text>
-</Card.Body>
+              <Card className="h-100 border-0 shadow-lg rounded-4">
+                <Card.Body>
+                  <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
+                  <Card.Text className="text-muted">
+                    <FaPython className="me-2 text-warning" /> Django, DRF<br />
+                    <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
+                    JWT, 2FA (Speakeasy), Bcrypt
+                  </Card.Text>
+                </Card.Body>
               </Card>
             </Col>
             <Col md={4} className="mb-3">
-              <Card className="h-100 border-0 shadow-sm rounded-4">
+              <Card className="h-100 border-0 shadow-lg rounded-4">
                 <Card.Body>
                   <Card.Title className="text-dark fw-semibold fs-5">DevOps & Tools</Card.Title>
                   <Card.Text className="text-muted">
-                    <FaAws className="me-2 text-warning" /> AWS EC2 basics, Netlify, Vercel<br />
+                    <FaAws className="me-2 text-warning" /> AWS EC2, Vercel, Netlify<br />
                     <FaGitAlt className="me-2 text-danger" /> Git, GitHub, MongoDB, MySQL
                   </Card.Text>
                 </Card.Body>
@@ -164,51 +164,39 @@ const Portfolio = () => {
           <h2 className="text-center mb-5 text-dark fw-bold fs-2">Projects</h2>
           <Row>
             <Col md={6} className="mb-4">
-              <Card className="h-100 shadow-sm border-0 rounded-4">
+              <Card className="h-100 shadow-lg border-0 rounded-4">
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">Social Media App (MERN + 2FA)</Card.Title>
                   <Card.Text className="text-muted">
-                    Secure social platform using Node.js, MongoDB, and React. JWT + 2FA with Speakeasy. Real-time chat, posts, profiles.
+                    Real-time platform with JWT & 2FA, React, Node, MongoDB. Secure and scalable chat and post system.
                   </Card.Text>
-                  <Button
-                    variant="outline-dark"
-                    href="https://github.com/Gowtham041104/Majorproject2"
-                    target="_blank"
-                  >
+                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/Majorproject2" target="_blank">
                     View Code
                   </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6} className="mb-4">
-              <Card className="h-100 shadow-sm border-0 rounded-4">
+              <Card className="h-100 shadow-lg border-0 rounded-4">
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">E-Commerce Shopping Cart</Card.Title>
                   <Card.Text className="text-muted">
-                    Built with React, Redux, and Django REST. Includes user auth, admin dashboard, cart, and orders.
+                    Built using Django + React + Redux. Includes full user auth, cart, checkout, admin dashboard.
                   </Card.Text>
-                  <Button
-                    variant="outline-dark"
-                    href="https://github.com/Gowtham041104/majorproject1"
-                    target="_blank"
-                  >
+                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/majorproject1" target="_blank">
                     View Code
                   </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={12}>
-              <Card className="h-100 shadow-sm border-0 rounded-4">
+              <Card className="h-100 shadow-lg border-0 rounded-4">
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">Electricity Board Connection Management</Card.Title>
                   <Card.Text className="text-muted">
-                    Django + React full-stack project. Features: CSV upload, form validation, and analytics (Chart.js).
+                    Admin dashboard with Django + React, CSV import, form validation, and visual analytics (Chart.js).
                   </Card.Text>
-                  <Button
-                    variant="outline-dark"
-                    href="https://github.com/Gowtham041104/electricity-project"
-                    target="_blank"
-                  >
+                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/electricity-project" target="_blank">
                     View Code
                   </Button>
                 </Card.Body>
