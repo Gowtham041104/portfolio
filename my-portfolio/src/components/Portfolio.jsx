@@ -1,33 +1,79 @@
 import React from "react";
-import { Container, Navbar, Nav, Button, Card, Row, Col } from "react-bootstrap";
+import {
+  Container,
+  Navbar,
+  Nav,
+  Button,
+  Card,
+  Row,
+  Col,
+} from "react-bootstrap";
+import {
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaGithub,
+  FaLinkedin,
+  FaAws,
+  FaGitAlt,
+} from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 const Portfolio = () => {
   return (
-    <div style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", backgroundColor: "#f9f9f9" }}>
-      {/* Header */}
+    <div
+      style={{
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        backgroundColor: "#f9f9f9",
+      }}
+    >
+      {/* Navbar */}
       <Navbar bg="white" expand="lg" fixed="top" className="shadow-sm border-bottom">
         <Container>
-          <Navbar.Brand href="#home" className="fw-bold text-dark fs-3">Gowtham K</Navbar.Brand>
+          <Navbar.Brand href="#home" className="fw-bold text-dark fs-3">
+            Gowtham K
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto fw-medium">
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#education">Education</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <ScrollLink to="about" smooth className="nav-link">About</ScrollLink>
+              <ScrollLink to="projects" smooth className="nav-link">Projects</ScrollLink>
+              <ScrollLink to="skills" smooth className="nav-link">Skills</ScrollLink>
+              <ScrollLink to="education" smooth className="nav-link">Education</ScrollLink>
+              <ScrollLink to="contact" smooth className="nav-link">Contact</ScrollLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       {/* Hero Section */}
-      <section className="text-center d-flex align-items-center justify-content-center" style={{ marginTop: "72px", minHeight: "100vh", background: "linear-gradient(135deg, #ffffff, #f0f4f8)" }}>
+      <section
+        className="d-flex align-items-center justify-content-center text-center"
+        style={{
+          marginTop: "72px",
+          minHeight: "100vh",
+          background: "linear-gradient(135deg, #ffffff, #f0f4f8)",
+        }}
+        id="home"
+      >
         <Container>
-          <h1 className="display-3 fw-bold text-dark mb-3">Hi, I'm Gowtham</h1>
-          <p className="lead text-muted mb-2">Full Stack Developer | MERN & Django | React | Node.js</p>
-          <p className="text-muted fs-5">📍 Chennai, Tamil Nadu | 📞 +91-6382444267 | 📧 gowthamk0411@gmail.com</p>
-          <Button variant="dark" size="lg" href="#projects" className="mt-3 px-5 py-2 shadow-sm">Explore My Work</Button>
+          <h1 className="display-4 fw-bold text-dark">Hi, I'm Gowtham 👋</h1>
+          <p className="lead text-muted">Full Stack Developer | MERN & Django</p>
+          <p className="text-muted">
+            📍 Chennai, Tamil Nadu | 📞 +91-6382444267 | 📧 gowthamk0411@gmail.com
+          </p>
+          <Button
+            size="lg"
+            className="mt-3 px-5 py-2 shadow"
+            style={{
+              background: "linear-gradient(to right, #141e30, #243b55)",
+              color: "#fff",
+              border: "none",
+            }}
+            href="#projects"
+          >
+            Explore My Work
+          </Button>
         </Container>
       </section>
 
@@ -51,7 +97,9 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="text-dark fw-semibold fs-5">Languages & Frontend</Card.Title>
                   <Card.Text className="text-muted">
-                    JavaScript (ES6+), Python, SQL<br />React.js, Redux, React Router, Axios, Bootstrap
+                    <FaReact className="me-2 text-primary" /> React.js, Redux<br />
+                    <FaPython className="me-2 text-warning" /> JavaScript (ES6+), Python, SQL<br />
+                    Bootstrap, Axios, Router
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -61,7 +109,8 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
                   <Card.Text className="text-muted">
-                    Node.js, Express.js, Django, DRF<br />JWT, OAuth2, 2FA (Speakeasy), Bcrypt
+                    <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
+                    Django, JWT, 2FA (Speakeasy), Bcrypt
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -71,7 +120,8 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="text-dark fw-semibold fs-5">DevOps & Tools</Card.Title>
                   <Card.Text className="text-muted">
-                    MongoDB, MySQL<br />Git, GitHub, Netlify, Vercel, AWS EC2, CI/CD basics
+                    <FaAws className="me-2 text-warning" /> AWS EC2 basics, Netlify, Vercel<br />
+                    <FaGitAlt className="me-2 text-danger" /> Git, GitHub, MongoDB, MySQL
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -116,9 +166,15 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">Social Media App (MERN + 2FA)</Card.Title>
                   <Card.Text className="text-muted">
-                    Secure social platform using Node.js, Express, MongoDB, and React. Implemented JWT and two-factor auth with Speakeasy. Features include real-time chat, posts, and profiles.
+                    Secure social platform using Node.js, MongoDB, and React. JWT + 2FA with Speakeasy. Real-time chat, posts, profiles.
                   </Card.Text>
-                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/majorproject1" target="_blank">View Code</Button>
+                  <Button
+                    variant="outline-dark"
+                    href="https://github.com/Gowtham041104/Majorproject2"
+                    target="_blank"
+                  >
+                    View Code
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -127,9 +183,15 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">E-Commerce Shopping Cart</Card.Title>
                   <Card.Text className="text-muted">
-                    Built with React, Redux, and Django REST. Includes authentication, admin dashboard, cart functionality, and order management.
+                    Built with React, Redux, and Django REST. Includes user auth, admin dashboard, cart, and orders.
                   </Card.Text>
-                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/book-library" target="_blank">View Code</Button>
+                  <Button
+                    variant="outline-dark"
+                    href="https://github.com/Gowtham041104/majorproject1"
+                    target="_blank"
+                  >
+                    View Code
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -138,9 +200,15 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title className="fw-semibold text-dark">Electricity Board Connection Management</Card.Title>
                   <Card.Text className="text-muted">
-                    Full-stack solution using Django and React. Features: bulk CSV upload, searchable tables, form validation, and analytics with Chart.js.
+                    Django + React full-stack project. Features: CSV upload, form validation, and analytics (Chart.js).
                   </Card.Text>
-                  <Button variant="outline-dark" href="https://github.com/Gowtham041104/electricity-project" target="_blank">View Code</Button>
+                  <Button
+                    variant="outline-dark"
+                    href="https://github.com/Gowtham041104/electricity-project"
+                    target="_blank"
+                  >
+                    View Code
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -155,8 +223,8 @@ const Portfolio = () => {
           <div className="text-center text-muted fs-6">
             <p><strong>Email:</strong> gowthamk0411@gmail.com</p>
             <p><strong>Phone:</strong> +91-6382444267</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gowthamk0411" target="_blank" rel="noopener noreferrer">linkedin.com/in/gowthamk0411</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Gowtham041104" target="_blank" rel="noopener noreferrer">github.com/Gowtham041104</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gowtham-k-589128276/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="me-1" /> linkedin.com/in/gowthamk0411</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Gowtham041104" target="_blank" rel="noopener noreferrer"><FaGithub className="me-1" /> github.com/Gowtham041104</a></p>
           </div>
         </Container>
       </section>
@@ -175,7 +243,7 @@ const Portfolio = () => {
             </Col>
             <Col md={4} className="mb-3">
               <h5 className="text-uppercase mb-3">Workshops</h5>
-              <p className="mb-0">Basics of Computer Networking — NetworkGeek, Chennai</p>
+              <p className="mb-0">Computer Networking – NetworkGeek, Chennai</p>
             </Col>
           </Row>
           <hr className="border-top border-secondary mt-4" />
