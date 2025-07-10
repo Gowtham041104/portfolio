@@ -106,13 +106,15 @@ const Portfolio = () => {
             </Col>
             <Col md={4} className="mb-3">
               <Card className="h-100 border-0 shadow-sm rounded-4">
-                <Card.Body>
-                  <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
-                  <Card.Text className="text-muted">
-                    <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
-                    Django, JWT, 2FA (Speakeasy), Bcrypt
-                  </Card.Text>
-                </Card.Body>
+<Card.Body>
+  <Card.Title className="text-dark fw-semibold fs-5">Backend & Security</Card.Title>
+  <Card.Text className="text-muted">
+     <FaNodeJs className="me-2 text-success" /> Node.js, Express<br />
+    <FaPython className="me-2 text-warning" /> Django, Django REST Framework<br />
+   
+    JWT, 2FA (Speakeasy), Bcrypt
+  </Card.Text>
+</Card.Body>
               </Card>
             </Col>
             <Col md={4} className="mb-3">
