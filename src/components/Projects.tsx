@@ -14,6 +14,15 @@ const Projects = () => {
       live: 'https://flightbookvenky.netlify.app/',
     },
     {
+      title: 'Online Event Management',
+      description: 'A comprehensive event management platform that allows users to create, manage, and attend events. Features include event creation, registration, attendee management, and real-time updates for seamless event coordination.',
+      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865',
+      tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+      frontend: 'https://github.com/PERAMVENKATESH45/ONLINE-EVENT-MANAGEMENT/tree/main/frontend',
+      backend: 'https://github.com/PERAMVENKATESH45/ONLINE-EVENT-MANAGEMENT/tree/main/backend',
+      live: 'https://eventmanagementvenky.netlify.app/',
+    },
+    {
       title: 'Password Reset Flow',
       description: 'A secure password reset system implementation with email verification, token-based authentication, and user-friendly interface. Demonstrates best practices for user authentication and security.',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
