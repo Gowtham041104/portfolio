@@ -9,7 +9,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     // Open Google Drive resume link in new tab
-    window.open('https://drive.google.com/file/d/1O8c87JQEQAXPQMW4KHybd5Qf0GO9J64L/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1_M4EEGKZhQlx_9IvT8R0z-pJ-chdYuUe/view?usp=sharing', '_blank');
   };
 
   return (
