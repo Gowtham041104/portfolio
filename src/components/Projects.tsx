@@ -5,31 +5,31 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Flight Booking System',
-      description: 'A comprehensive flight booking application built with modern web technologies. Features include flight search, booking management, user authentication, and a clean, intuitive interface for seamless travel planning.',
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      frontend: 'https://github.com/PERAMVENKATESH45/Flight-booking-system',
-      backend: 'https://github.com/PERAMVENKATESH45/Flight-booking-system',
-      live: 'https://flightbookvenky.netlify.app/',
+      title: 'Social Media App (MERN + 2FA)',
+      description: 'Real-time platform with JWT & 2FA, including full CRUD for posts, comments, profiles, and follows. Built with React, Node, Express, and MongoDB.',
+      image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', '2FA', 'CRUD'],
+      frontend: 'https://github.com/Gowtham041104/Majorproject2',
+      backend: 'https://github.com/Gowtham041104/Majorproject2',
+      live: 'https://majorproject2-alpha.vercel.app/login',
     },
     {
-      title: 'Online Event Management',
-      description: 'A comprehensive event management platform that allows users to create, manage, and attend events. Features include event creation, registration, attendee management, and real-time updates for seamless event coordination.',
-      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-      frontend: 'https://github.com/PERAMVENKATESH45/ONLINE-EVENT-MANAGEMENT/tree/main/frontend',
-      backend: 'https://github.com/PERAMVENKATESH45/ONLINE-EVENT-MANAGEMENT/tree/main/backend',
-      live: 'https://eventmanagementvenky.netlify.app/',
+      title: 'E-Commerce Shopping Cart',
+      description: 'Built using Node.js + React + Redux. Includes full user auth, cart, checkout, admin dashboard.',
+      image: 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514',
+      tags: ['Node.js', 'React', 'Redux', 'REST'],
+      frontend: 'https://github.com/Gowtham041104/majorproject1',
+      backend: 'https://github.com/Gowtham041104/majorproject1',
+      live: 'https://majorproject1-u1dp.vercel.app/login',
     },
     {
-      title: 'Password Reset Flow',
-      description: 'A secure password reset system implementation with email verification, token-based authentication, and user-friendly interface. Demonstrates best practices for user authentication and security.',
-      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
-      tags: ['Node.js', 'Express', 'JWT', 'Email API'],
-      frontend: 'https://github.com/PERAMVENKATESH45/Password_Reset',
-      backend: 'https://github.com/PERAMVENKATESH45/Password_Reset',
-      live: 'https://subtle-taiyaki-b26f04.netlify.app/',
+      title: 'SaaS Manager',
+      description: 'SaaS management dashboard with auth and full CRUD for tenants, users, plans, and subscriptions. Clean UI and role-based access.',
+      image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
+      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'RBAC', 'CRUD'],
+      frontend: '#',
+      backend: '#',
+      live: 'https://saasmange.netlify.app/login',
     },
   ];
 
@@ -45,19 +45,19 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.title}
-              className="group bg-white/5 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/10"
+              className="group rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:from-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/10"
             >
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
               <div className="p-6">
@@ -68,42 +68,46 @@ const Projects = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.tags.map((tag) => (
                     <span 
                       key={tag}
-                      className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm"
+                      className="px-3 py-1 rounded-full text-xs border border-white/10 text-sky-300 bg-sky-500/10"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
-                  <a 
-                    href={project.frontend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>Frontend</span>
-                  </a>
-                  <a 
-                    href={project.backend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>Backend</span>
-                  </a>
+                <div className="flex flex-wrap gap-3">
+                  {project.frontend !== '#' && (
+                    <a 
+                      href={project.frontend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 text-sm text-gray-200 hover:text-white hover:bg-white/10"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Frontend</span>
+                    </a>
+                  )}
+                  {project.backend !== '#' && (
+                    <a 
+                      href={project.backend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 text-sm text-gray-200 hover:text-white hover:bg-white/10"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Backend</span>
+                    </a>
+                  )}
                   {project.live !== '#' && (
                     <a 
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white text-sm"
                     >
                       <ExternalLink className="w-4 h-4" />
                       <span>Live Demo</span>

@@ -11,8 +11,8 @@ const About = () => {
             About Me
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with expertise in MERN stack technologies. 
-            I love turning complex problems into simple, beautiful solutions.
+            Full Stack Developer (MERN Stack) based in Chennai. I build secure, scalable
+            applications with clean architecture and a strong focus on user experience.
           </p>
         </div>
         
@@ -22,9 +22,9 @@ const About = () => {
               My Journey
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              As a fresher in the field of web development, I joined Guvi to master the MERN stack 
-              technologies. During my learning journey, I gained hands-on experience with MongoDB, 
-              Express.js, React.js, and Node.js, building several projects that showcase my skills.
+              I have hands-on experience building production-ready apps using React, Node.js,
+              MongoDB, Express and REST APIs. My recent work includes a Social Media app with
+              2FA and an E‑Commerce platform with admin dashboard.
             </p>
             <p className="text-gray-300 leading-relaxed">
               I believe in writing clean, maintainable code and creating user experiences that are 

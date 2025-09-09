@@ -14,7 +14,7 @@ const Contact = () => {
     // Create mailto link with form data
     const subject = `Portfolio Contact from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:peramvenkatesh97@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:gowthamk0411@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open default email client
     window.location.href = mailtoLink;
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400">peramvenkatesh97@gmail.com</p>
+                  <p className="text-gray-400">gowthamk0411@gmail.com</p>
                 </div>
               </div>
               
@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Phone</p>
-                  <p className="text-gray-400">1234567890</p>
+                  <p className="text-gray-400">+91-6382444267</p>
                 </div>
               </div>
               
@@ -75,7 +75,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
-                  <p className="text-gray-400">Tirupati, India</p>
+                  <p className="text-gray-400">Chennai, Tamil Nadu</p>
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-white/10">
           <p className="text-gray-400">
-            © 2025 Peram Venkatesh. Built with React and Tailwind CSS.
+            © 2025 Gowtham K. Built with React and Tailwind CSS.
           </p>
         </div>
       </div>

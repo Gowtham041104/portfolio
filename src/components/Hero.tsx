@@ -8,73 +8,63 @@ const Hero = () => {
   };
 
   const downloadResume = () => {
-    // Open Google Drive resume link in new tab
-    window.open('https://drive.google.com/file/d/1_M4EEGKZhQlx_9IvT8R0z-pJ-chdYuUe/view?usp=sharing', '_blank');
+    // Open resume on Google Drive
+    window.open('https://drive.google.com/file/d/1La-AeqvOoWd_tyZ0-Ud_vDJ-0ZK4D_ap/view', '_blank');
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm"></div>
-      
-      {/* Animated background shapes */}
-      <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-6 animate-scale-in">
-            Peram Venkatesh
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in delay-300">
-            Full Stack Developer
-          </p>
-          <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in delay-500">
-            Passionate about creating beautiful, functional, and user-centered digital experiences. 
-            I bring ideas to life through clean code and thoughtful design.
-          </p>
+    <section id="home" className="min-h-[88vh] flex items-center relative overflow-hidden">
+      {/* Unique background grid overlay */}
+      <div className="absolute inset-0 opacity-[0.08] bg-[radial-gradient(circle_at_1px_1px,#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-sky-900/40 to-indigo-900/40"></div>
+
+      <div className="relative z-10 px-6 max-w-4xl mx-auto text-center">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
+          Gowtham K
+        </h1>
+        <p className="text-xl md:text-2xl text-sky-200 mb-6">Full Stack Developer </p>
+        <p className="text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto text-lg">
+          I build secure, scalable web apps with clean architecture and great UX: from 2FA-enabled social platforms to full-featured e‑commerce.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
+          {['React', 'Node.js', 'MongoDB', 'Express', 'REST', '2FA'].map((tag) => (
+            <span key={tag} className="px-4 py-2 rounded-full border border-white/10 text-sm text-sky-300 bg-sky-500/10">{tag}</span>
+          ))}
         </div>
-        
-        {/* Social Links */}
-        <div className="flex justify-center space-x-6 mb-12 animate-fade-in delay-700">
-          <a href="https://github.com/PERAMVENKATESH45" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
-            <Github className="w-6 h-6 text-white" />
-          </a>
-          <a href="https://www.linkedin.com/in/venkatesh-peram-341ab1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
-            <Linkedin className="w-6 h-6 text-white" />
-          </a>
-          <a href="mailto:peramvenkatesh97@gmail.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
-            <Mail className="w-6 h-6 text-white" />
-          </a>
-        </div>
-        
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-1000">
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
           <button 
             onClick={() => scrollToSection('projects')}
-            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
+            className="px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white font-medium text-lg hover:from-sky-600 hover:to-indigo-600 transition-all duration-300"
           >
-            View My Work
+            View Projects
           </button>
           <button 
             onClick={downloadResume}
-            className="px-8 py-4 border border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+            className="px-8 py-4 rounded-full border border-white/20 text-white font-medium text-lg hover:bg-white/10 transition-all duration-300"
           >
-            <Download className="w-4 h-4" />
-            <span>Download Resume</span>
+            Download Resume
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
-            className="px-8 py-4 border border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105"
+            className="px-8 py-4 rounded-full border border-white/20 text-white font-medium text-lg hover:bg-white/10 transition-all duration-300"
           >
-            Get In Touch
+            Contact
           </button>
         </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-white/70" />
+
+        <div className="flex items-center justify-center gap-6">
+          <a href="https://github.com/Gowtham041104" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+            <Github className="w-6 h-6 text-white" />
+          </a>
+          <a href="https://www.linkedin.com/in/gowtham-k-589128276/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+            <Linkedin className="w-6 h-6 text-white" />
+          </a>
+          <a href="mailto:gowthamk0411@gmail.com" className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+            <Mail className="w-6 h-6 text-white" />
+          </a>
+        </div>
       </div>
     </section>
   );
