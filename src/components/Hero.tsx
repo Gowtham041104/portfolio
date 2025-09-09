@@ -23,7 +23,7 @@ const Hero = () => {
           Gowtham K
         </h1>
         <p className="text-xl md:text-2xl text-sky-200 mb-6">Full Stack Developer 
-          
+
         </p>
         <p className="text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto text-lg">
           I build secure, scalable web apps with clean architecture and great UX: from 2FA-enabled social platforms to full-featured e‑commerce.
