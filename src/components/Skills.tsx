@@ -61,22 +61,20 @@ const Skills = () => {
           ))}
         </div>
         
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
-            <h4 className="text-white font-semibold mb-3">Frontend</h4>
+            <h4 className="text-white font-semibold mb-3">Frontend Development</h4>
             <p className="text-gray-400 text-sm">React.js, Angular, TypeScript, Tailwind CSS, Material-UI, Redux Toolkit</p>
           </div>
           
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
-            <h4 className="text-white font-semibold mb-3">Backend</h4>
-            <p className="text-gray-400 text-sm">Node.js, Express.js, MongoDB, Django,REST APIs</p>
+            <h4 className="text-white font-semibold mb-3">Backend Development</h4>
+            <p className="text-gray-400 text-sm">Node.js, Express.js, MongoDB, REST APIs, JWT Authentication</p>
           </div>
           
-         
-          
           <div className="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
-            <h4 className="text-white font-semibold mb-3">Testing & Tools</h4>
-            <p className="text-gray-400 text-sm">Thunder client, Postman, VS Code, GitHub</p>
+            <h4 className="text-white font-semibold mb-3">Development Tools</h4>
+            <p className="text-gray-400 text-sm">Git, GitHub, VS Code, Postman, Vercel, Netlify</p>
           </div>
         </div>
       </div>

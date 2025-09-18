@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {['React', 'Node.js', 'MongoDB', 'Express', 'REST', '2FA'].map((tag) => (
+          {['React', 'Angular', 'Node.js', 'MongoDB', 'Express', 'REST', '2FA'].map((tag) => (
             <span key={tag} className="px-4 py-2 rounded-full border border-white/10 text-sm text-sky-300 bg-sky-500/10">{tag}</span>
           ))}
         </div>
