@@ -26,7 +26,7 @@ const Resume = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
-              <span>+91 9876543210</span>
+              <span>+91 638244267</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4" />
