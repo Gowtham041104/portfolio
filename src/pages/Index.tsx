@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
@@ -19,7 +20,7 @@ const Index = () => {
             <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
             <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
             <a href="#contact" className="text-gray-300 hover:text-white">Contact</a>
-            <a href="/resume" className="px-3 py-1 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white">Resume</a>
+            <Link to="/resume" className="px-3 py-1 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white">Resume</Link>
           </nav>
         </div>
       </header>
