@@ -27,9 +27,9 @@ const Projects = () => {
       description: 'Enterprise SaaS platform with role-based access control, tenant management, subscription handling, and comprehensive admin features.',
       image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
       tags: ['React', 'Node.js', 'Express', 'MongoDB', 'RBAC'],
-      frontend: 'https://github.com/Gowtham041104/SaaS-Manager-Frontend',
-      backend: 'https://github.com/Gowtham041104/SaaS-Manager-Backend',
-      live: 'https://saasmange.netlify.app/login',
+      frontend: 'https://github.com/Gowtham041104/saasmanagement',
+      backend: 'https://github.com/Gowtham041104/saasmanagement',
+      live: 'https://saasmangement.netlify.app/login',
     },
   ];
 
