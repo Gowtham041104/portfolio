@@ -10,15 +10,15 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create mailto link with form data
     const subject = `Portfolio Contact from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
     const mailtoLink = `mailto:gowthamk0411@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
+
     // Open default email client
     window.location.href = mailtoLink;
-    
+
     console.log('Form submitted:', formData);
   };
 
@@ -40,14 +40,14 @@ const Contact = () => {
             I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-white mb-6">
               Let's Connect
             </h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-blue-500/20 rounded-full">
@@ -58,7 +58,7 @@ const Contact = () => {
                   <p className="text-gray-400">gowthamk0411@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-green-500/20 rounded-full">
                   <Phone className="w-6 h-6 text-green-400" />
@@ -68,7 +68,7 @@ const Contact = () => {
                   <p className="text-gray-400">+91-6382444267</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <div className="p-3 bg-purple-500/20 rounded-full">
                   <MapPin className="w-6 h-6 text-purple-400" />
@@ -79,15 +79,15 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="pt-8">
               <p className="text-gray-300 leading-relaxed">
-                Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                Whether you have a project in mind, want to collaborate, or just want to say hello,
                 I'd love to hear from you. Let's create something amazing together!
               </p>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="bg-white/5 p-8 rounded-xl backdrop-blur-sm border border-white/10">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -106,7 +106,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-white font-medium mb-2">
                   Email
@@ -122,7 +122,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-white font-medium mb-2">
                   Message
@@ -138,7 +138,7 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
@@ -149,7 +149,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        
+
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-white/10">
           <p className="text-gray-400">

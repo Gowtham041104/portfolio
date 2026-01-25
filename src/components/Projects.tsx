@@ -44,22 +44,22 @@ const Projects = () => {
             Here are some of the projects I've worked on recently. Each one represents a unique challenge and learning experience.
           </p>
         </div>
-        
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div 
+          {projects.map((project) => (
+            <div
               key={project.title}
               className="group rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:from-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/10"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
                   {project.title}
@@ -67,10 +67,10 @@ const Projects = () => {
                 <p className="text-gray-400 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tags.map((tag) => (
-                    <span 
+                    <span
                       key={tag}
                       className="px-3 py-1 rounded-full text-xs border border-white/10 text-sky-300 bg-sky-500/10"
                     >
@@ -78,10 +78,10 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex flex-wrap gap-3">
                   {project.frontend !== '#' && (
-                    <a 
+                    <a
                       href={project.frontend}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -92,7 +92,7 @@ const Projects = () => {
                     </a>
                   )}
                   {project.backend !== '#' && (
-                    <a 
+                    <a
                       href={project.backend}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -103,7 +103,7 @@ const Projects = () => {
                     </a>
                   )}
                   {project.live !== '#' && (
-                    <a 
+                    <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"

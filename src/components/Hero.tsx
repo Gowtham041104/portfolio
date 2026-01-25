@@ -22,11 +22,12 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
           Gowtham K
         </h1>
-        <p className="text-xl md:text-2xl text-sky-200 mb-6">Full Stack Developer 
+        <p className="text-xl md:text-2xl text-sky-200 mb-6">Full Stack Developer
 
         </p>
         <p className="text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto text-lg">
-          I build secure, scalable web apps with clean architecture and great UX: from 2FA-enabled social platforms to full-featured e‑commerce.
+          Full Stack Developer experienced in building secure, scalable web applications with clean architecture, robust authentication, and user-centric design.
+
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">
@@ -36,19 +37,19 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-          <button 
+          <button
             onClick={() => scrollToSection('projects')}
             className="px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white font-medium text-lg hover:from-sky-600 hover:to-indigo-600 transition-all duration-300"
           >
             View Projects
           </button>
-          <button 
+          <button
             onClick={downloadResume}
             className="px-8 py-4 rounded-full border border-white/20 text-white font-medium text-lg hover:bg-white/10 transition-all duration-300"
           >
             Download Resume
           </button>
-          <button 
+          <button
             onClick={() => scrollToSection('contact')}
             className="px-8 py-4 rounded-full border border-white/20 text-white font-medium text-lg hover:bg-white/10 transition-all duration-300"
           >

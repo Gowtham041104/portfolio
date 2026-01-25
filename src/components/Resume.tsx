@@ -12,12 +12,12 @@ const Resume = () => {
               <h1 className="text-4xl font-bold mb-2">Gowtham S</h1>
               <p className="text-xl text-blue-100 mb-4">Full Stack Developer</p>
               <p className="text-blue-100 max-w-2xl leading-relaxed">
-                Fresh graduate with strong foundation in MERN stack development, passionate about creating 
+                Fresh graduate with strong foundation in MERN stack development, passionate about creating
                 scalable web applications and solving complex problems through innovative technology solutions.
               </p>
             </div>
           </div>
-          
+
           {/* Contact Info */}
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
             <div className="flex items-center space-x-2">
@@ -99,7 +99,7 @@ const Resume = () => {
           {/* Projects */}
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
-            
+
             <div className="space-y-6">
               <div className="border-l-4 border-blue-600 pl-6">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">

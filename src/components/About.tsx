@@ -15,7 +15,7 @@ const About = () => {
             applications with clean architecture and a strong focus on user experience.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white mb-4">
@@ -27,12 +27,12 @@ const About = () => {
               2FA and an E‑Commerce platform with admin dashboard.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I believe in writing clean, maintainable code and creating user experiences that are 
-              both beautiful and functional. I'm eager to apply my knowledge in real-world projects 
+              I believe in writing clean, maintainable code and creating user experiences that are
+              both beautiful and functional. I'm eager to apply my knowledge in real-world projects
               and continue growing as a developer while contributing to meaningful solutions.
             </p>
           </div>
-          
+
           <div className="grid gap-6">
             <div className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
               <Code className="w-8 h-8 text-blue-400 mb-3" />
@@ -41,7 +41,7 @@ const About = () => {
                 Writing maintainable, scalable, and efficient code following best practices.
               </p>
             </div>
-            
+
             <div className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
               <Palette className="w-8 h-8 text-purple-400 mb-3" />
               <h4 className="text-white font-semibold mb-2">Problem Solving</h4>
@@ -49,7 +49,7 @@ const About = () => {
                 Breaking down complex problems into simple, elegant solutions.
               </p>
             </div>
-            
+
             <div className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
               <Zap className="w-8 h-8 text-yellow-400 mb-3" />
               <h4 className="text-white font-semibold mb-2">Learning</h4>
